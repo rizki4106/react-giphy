@@ -1,0 +1,20 @@
+.list_item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 820px){
+    .list_item {
+        grid-template-columns: repeat(2, 45%);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .list_item {
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 0px;
+    }
+}
